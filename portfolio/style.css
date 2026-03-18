@@ -1,0 +1,153 @@
+/*----------------------------------------------------------------------
+| File Name: style.css
+| Programmer: Jacob L Brittain
+| First Created: 2/11/2026
+| Most Recent Update: 2/11/2026
+| Description: The Css for my portfolio
+----------------------------------------------------------------------*/
+
+/***ELEMENTS***/
+body{
+    background-color: #454545;
+    color: #EEEEEE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    padding: 5px;
+}
+
+div h2{
+    text-decoration: underline;
+}
+
+dt {
+    color:#60AD91;
+    
+}
+
+dt::before {
+    content: "> ";
+    padding-inline: 1ch;
+}
+
+dd::before {
+    content: "-";
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+}
+
+h2 {
+    color: #60AD91;
+}
+
+label {
+    cursor: pointer;
+}
+
+ol li {
+    background-color: #EEEEEE;
+    color: #454545;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+/*** CLASSES ***/
+
+.bigCon {
+    background-color: #EEEEEE;
+    color: #454545;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color: #454545;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+
+.bigCon div {
+    background-color: #454545;
+    color: #EEEEEE;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    padding-top: 1px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clean {
+    background-color: #EEEEEE;
+}
+
+/* Styles for the 2 blocks */
+
+.heroImage{
+    width:33%;
+    height:33%;
+    float: left;
+}
+.heroImageCon {
+    width:100%;
+    overflow:auto;
+}
+.heroImageCon div {
+    width:66%;
+    float:left;
+    background-color: #EEEEEE;
+    color: #454545;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color: #454545;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+}
+
+.wide{
+    width:33%;
+    float:left;
+    background-color: #EEEEEE;
+    color: #454545;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color: #454545;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+
+/***IDS***/
+
+#top{/* The styles for the header and nav top bar*/
+    color: #454545;
+    background-color: #EEEEEE;
+    border-radius: 25px;
+    padding: 3px 10px;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+/***OTHER***/
+
+@media screen and (max-width:641px) {
+    .wide {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .heroImageCon div {
+        width: 100%;
+    }
+
+    .heroImage {
+        width: 100%;
+    }
+}
